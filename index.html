@@ -1,137 +1,231 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Jangouts - GSOC 2016</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    name="viewport">
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <title>Jangouts - GSOC 2016</title><!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel=
+    "stylesheet">
+    <link href=
+    "https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700"
+    rel="stylesheet">
+    <link href="css/materialize.css" media="screen,projection" rel="stylesheet"
+    type="text/css">
+    <link href="css/style.min.css" media="screen,projection" rel="stylesheet"
+    type="text/css">
 </head>
+
 <body>
-  <!--<nav class="white" role="navigation">-->
-    <!--<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>-->
-      <!--<ul class="right hide-on-med-and-down">-->
-        <!--<li><a href="#">Navbar Link</a></li>-->
-      <!--</ul>-->
 
-      <!--<ul id="nav-mobile" class="side-nav">-->
-        <!--<li><a href="#">Navbar Link</a></li>-->
-      <!--</ul>-->
-      <!--<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
-    <!--</div>-->
-  <!--</nav>-->
-  <div class="section no-pad-bot bg-suse" id="index-banner">
-    <div class="container">
-      <h1 class="header center highlighted">JANGOUTS</h1>
-      <div class="row center">
-        <h2 class="header col s12 light">Your meetings mate</h2>
-      </div>
+    <!-- Header -->
+    <div class="section no-pad-bot bg-suse" id="index-banner">
+        <div class="container">
+            <h1 class="header center highlighted">JANGOUTS</h1>
 
+
+            <div class="row center">
+                <h2 class="header col s12 light">Your meetings mate</h2>
+            </div>
+        </div>
     </div>
-  </div>
 
 
-  <div class="container">
-    <div class="section">
-      <h2 class="color-suse">About Jangouts</h2>
-      <p><a href="https://github.com/jangouts/jangouts" target="_blank">Jangouts</a> (for “Janus Hangouts”) is a self-hosted open source solution for videoconferencing based on WebRTC and the excellent Janus Gateway.</p>
-
-      <h2 class="color-suse">Project: Port Jangouts from AngularJS 1.4</h2>
-
-  <span class="color-suse" id="mentors">MENTORS:</span>
-  <div class="chip">
-    <img src="https://avatars0.githubusercontent.com/u/15836?v=3&s=460" alt="imobachgs">
-    Imobach González Sosa
-  </div>
-  <div class="chip">
-    <img src="https://avatars0.githubusercontent.com/u/3638289?v=3&s=400" alt="ancorgs">
-    Ancor González Sosa
-  </div>
-
-
-
-			<h3 class="color-suse">Abstract</h3>
-      <p>Nobody knows when Angular2 is going to be released but it will be early, and all AngularJS 1.X projects should be migrated to the new version. With this proposal I will migrate the actual code of Jangouts from Angular 1.4 to Angular 2.
-
-The new version of Angular is really different from the previous version. Migrating Jangouts to the new version is necessary but this implies a lot of work. First migrate from ECMAScript 5 to TypeScript and, at the same time, update the code to the new version of Angular 2.
-
-On the other hand, during the transition a testsuite will be added.</p>
-      <h3 class="color-suse">Project Goals</h3>
-      <ul class="collection">
-        <li class="collection-item">Migrate code from ECMAScript 5 to TypeScript.<span class="new badge" data-badge-caption="Completed"></span></li>
-        <li class="collection-item">Migrate code from Angular 1.4 to Angular 2.<span class="new badge" data-badge-caption="Completed"></span></li>
-        <li class="collection-item">Add a testsuite for the project.<span class="new badge orange" data-badge-caption="Almost Completed"></span></li>
-        <li class="collection-item">Write and update a proper documentation.<span class="new badge" data-badge-caption="Completed"></span></li>
-        <li class="collection-item">Update build tools.<span class="new badge" data-badge-caption="Completed"></span></li>
-      </ul>
-		</div>
-
-    <div class="section">
-			<h2 class="color-suse">Work</h2>
-			<h3 class="color-suse">Main repo</h3>
-			<p><a href="https://github.com/jangouts/jangouts/commits/angular-2?author=magarcia" target="_blank">Link <i class="material-icons tiny">open_in_new</i></a> contains all the commits to the main migration branch in the organisation repository.</p>
-
-			<h3 class="color-suse">Active Pull Request</h3>
-			<p><a href="https://github.com/jangouts/jangouts/pull/151" target="_blank">Final migration <i class="material-icons tiny">open_in_new</i></a></p>
-			<p><a href="https://github.com/jangouts/jangouts/pull/151" target="_blank">Remove Angular 1 <i class="material-icons tiny">open_in_new</i></a></p>
-
-			<h3 class="color-suse">Current and future Work</h3>
-			<ul class="collection">
-				<li class="collection-item">Speak detected icon don't works properly.<span class="new badge red" data-badge-caption="Bug"></span></li>
-				<li class="collection-item">Show if one participant is set as "sticky".<span class="new badge red" data-badge-caption="Bug"></span></li>
-				<li class="collection-item">Reenable gridster support for videoroom.<span class="new badge deep-purple" data-badge-caption="Feature"></span></li>
-				<li class="collection-item">Add embeded links, images, emojis into chat.<span class="new badge deep-purple" data-badge-caption="Feature"></span></li>
-				<li class="collection-item">Reenable gridster support for videoroom.<span class="new badge deep-purple" data-badge-caption="Feature"></span></li>
-				<li class="collection-item">Add documentation generator support.<span class="new badge blue" data-badge-caption="Docs"></span></li>
-				<li class="collection-item">Fix Pushtotalk key sequence record.<span class="new badge red" data-badge-caption="Bug"></span></li>
-				<li class="collection-item">Add hotkeys cheatsheet support.<span class="new badge deep-purple" data-badge-caption="Feature"></span></li>
-				<li class="collection-item">Add E2E test suite.<span class="new badge deep-purple" data-badge-caption="Feature"></span></li>
-			</ul>
-    </div>
-  </div>
-
-
-
-  <!--Footer-->
-  <footer class="page-footer bg-suse">
+    <!-- Content -->
     <div class="container">
-      <div class="row">
-        <div class="col l9 s12">
-          <h5 class="white-text">About me</h5>
-          <p class="grey-text text-lighten-4">I am a Software Developer and Web enthusiastic based in Barcelona</p>
-					<ul>
-						<li><a href="https://thingsofgeek.com" target="_blank">Blog</a></li>
-						<li><a href="https://twitter.com/martinprins" target="_blank">Twitter</a></li>
-						<li><a href="https://github.com/magarcia" target="_blank">Github</a></li>
-					</ul>
+        <div class="section">
+
+            <h2 class="color-suse">About Jangouts</h2>
+            <p><a href="https://github.com/jangouts/jangouts"
+            target="_blank">Jangouts</a> (for “Janus Hangouts”) is a self-hosted open
+            source solution for videoconferencing based on WebRTC and the
+            excellent Janus Gateway.</p>
+
+            <h2 class="color-suse">Project: Port Jangouts from AngularJS 1.4</h2>
+
+            <span class="color-suse" id="mentors">MENTORS:</span>
+            <div class="chip">
+                <img alt="imobachgs" src=
+                "https://avatars0.githubusercontent.com/u/15836?v=3&s=460">
+                Imobach González Sosa
+            </div>
+            <div class="chip">
+                <img alt="ancorgs" src=
+                "https://avatars0.githubusercontent.com/u/3638289?v=3&s=400">
+                Ancor González Sosa
+            </div>
+
+
+            <h3 class="color-suse">Abstract</h3>
+            <p>Nobody knows when Angular2 is going to be released but it will
+            be early, and all AngularJS 1.X projects should be migrated to the
+            new version. With this proposal I will migrate the actual code of
+            Jangouts from Angular 1.4 to Angular 2. The new version of Angular
+            is really different from the previous version. Migrating Jangouts
+            to the new version is necessary but this implies a lot of work.
+            First migrate from ECMAScript 5 to TypeScript and, at the same
+            time, update the code to the new version of Angular 2. On the other
+            hand, during the transition a testsuite will be added.</p>
+
+
+            <h3 class="color-suse">Project Goals</h3>
+            <ul class="collection">
+                <li class="collection-item">
+                    Migrate code from ECMAScript 5 to TypeScript.
+                    <span class="new badge" data-badge-caption="Completed"></span>
+                </li>
+                <li class="collection-item">
+                    Migrate code from Angular 1.4 to Angular 2.
+                    <span class="new badge" data-badge-caption="Completed"></span>
+                </li>
+                <li class="collection-item">
+                    Add a testsuite for the project.
+                    <span class="new badge orange" data-badge-caption="Almost Completed"></span>
+                </li>
+                <li class="collection-item">
+                    Write and update a proper documentation.
+                    <span class="new badge" data-badge-caption="Completed"></span>
+                </li>
+                <li class="collection-item">
+                    Update build tools.
+                    <span class= "new badge" data-badge-caption="Completed"></span>
+                </li>
+            </ul>
         </div>
 
-        <div class="col l3 s12">
-          <h5 class="white-text">Project links</h5>
-          <ul>
-            <li><a class="white-text" href="files/Proposal.pdf" target="_blank">Proposal</a></li>
-            <li><a class="white-text" href="https://github.com/jangouts/jangouts" target="_blank">Jangouts Github</a></li>
-            <li><a class="white-text" href="https://trello.com/b/vtQJBxbf/jangouts" target="_blank">Trello board</a></li>
-          </ul>
+
+        <!-- Work -->
+        <div class="section">
+
+            <h2 class="color-suse">Work</h2>
+
+            <h3 class="color-suse">Main repo</h3>
+            <p><a href= "https://github.com/jangouts/jangouts/commits/angular-2?author=magarcia"
+            target="_blank">Link <i class= "material-icons tiny">open_in_new</i></a> contains all the commits
+            to the main migration branch in the organisation repository.</p>
+
+
+            <h3 class="color-suse">Active Pull Request</h3>
+            <p><a href="https://github.com/jangouts/jangouts/pull/151" target=
+            "_blank">Final migration <i class=
+            "material-icons tiny">open_in_new</i></a>
+            </p>
+            <p><a href="https://github.com/jangouts/jangouts/pull/151" target=
+            "_blank">Remove Angular 1 <i class=
+            "material-icons tiny">open_in_new</i></a>
+            </p>
+
+
+            <h3 class="color-suse">Current and future Work</h3>
+            <ul class="collection">
+              <li class="collection-item">
+                Speak detected icon don't works properly.
+                <span class="new badge red" data-badge-caption= "Bug"></span>
+              </li>
+              <li class="collection-item">
+                Show if one participant is set as "sticky".
+                <span class="new badge red" data-badge-caption= "Bug"></span>
+              </li>
+              <li class="collection-item">
+                Reenable gridster support for videoroom.
+                <span class="new badge deep-purple" data-badge-caption="Feature"></span>
+              </li>
+              <li class="collection-item">
+                Add embeded links, images, emojis into chat.
+                <span class="new badge deep-purple" data-badge-caption="Feature"></span>
+              </li>
+              <li class="collection-item">
+                Reenable gridster support for videoroom.
+                <span class="new badge deep-purple" data-badge-caption="Feature"></span>
+              </li>
+              <li class="collection-item">
+                Add documentation generator support.
+                <span class="new badge blue" data-badge-caption= "Docs"></span>
+              </li>
+              <li class="collection-item">
+                Fix Pushtotalk key sequence record.
+                <span class="new badge red" data-badge-caption= "Bug"></span>
+              </li>
+              <li class="collection-item">
+                Add hotkeys cheatsheet support.
+                <span class="new badge deep-purple" data-badge-caption= "Feature"></span>
+              </li>
+              <li class="collection-item">
+                Add E2E test suite.
+                <span class= "new badge deep-purple" data-badge-caption= "Feature"></span>
+              </li>
+            </ul>
         </div>
-      </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="highlighted" href="http://thingsofgeek.com">Martin Garcia</a>
-      </div>
-    </div>
-  </footer>
+
+    <!-- Footer -->
+    <footer class="page-footer bg-suse">
+        <div class="container">
+            <div class="row">
+
+                <!-- About -->
+                <div class="col l9 s12">
+                    <h5 class="white-text">About me</h5>
+                    <p class="grey-text text-lighten-4">I am a Software
+                    Developer and Web enthusiastic based in Barcelona</p>
+
+                    <ul>
+                        <li>
+                            <a href="https://thingsofgeek.com" target=
+                            "_blank">Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/martinprins" target=
+                            "_blank">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/magarcia" target=
+                            "_blank">Github</a>
+                        </li>
+                    </ul>
+                </div>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+                <!-- Project links -->
+                <div class="col l3 s12">
+                    <h5 class="white-text">Project links</h5>
 
-  </body>
+                    <ul>
+                        <li>
+                            <a class="white-text" href="files/Proposal.pdf"
+                            target="_blank">Proposal</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href=
+                            "https://github.com/jangouts/jangouts" target=
+                            "_blank">Jangouts Github</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href=
+                            "https://trello.com/b/vtQJBxbf/jangouts" target=
+                            "_blank">Trello board</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="highlighted" href=
+                "http://thingsofgeek.com">Martin Garcia</a>
+            </div>
+        </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+    <script src="js/materialize.js">
+    </script>
+    <script src="js/init.js">
+    </script>
+</body>
 </html>
