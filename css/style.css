@@ -1,0 +1,88 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+	color: #878787;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	background-color: #f6f6f6;
+}
+a {
+	color: #35b9ab;
+}
+i.material-icons {
+    vertical-align: middle;
+}
+a i.material-icons {
+	opacity: 0.6;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+h2 {
+	font-size: 2.5rem;
+}
+h3 {
+	font-size: 2rem;
+}
+.color-suse {
+  color: #173f4f;
+}
+.bg-suse {
+  background-color: #173f4f !important;
+  color: #fff;
+}
+.bg-suse .highlighted {
+  color: #35b9ab;
+  font-weight: 300;
+}
+#index-banner {
+	background-image: url('/images/bg.jpg') !important;
+  height: 50vh;
+  min-height: 250px;
+	display: -ms-flexbox;
+  display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#index-banner h1 {
+	margin-bottom: 0;
+}
+#index-banner h2 {
+  font-size: 18px;
+	margin-top: 0;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#mentors {
+  font-size: 18px;
+  line-height: 32px;
+  vertical-align: middle;
+  color: #35b9ab;
+	margin-right: 10px;
+}
+span.new.badge {
+	background-color: #6da741;
+}
+span.new.badge.almost {
+	background-color: #ffa726;
+}
